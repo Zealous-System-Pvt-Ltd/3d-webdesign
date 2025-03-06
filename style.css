@@ -1,0 +1,171 @@
+@import url('https://fonts.cdnfonts.com/css/devil-breeze');
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+section{
+    height: 100vh;
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    overflow:hidden;
+    background-color: #211414;
+}
+/* .section1{
+    background-color: blue;
+} */
+#canvas1,#canvas2 ,#canvas3{
+    width:65%;
+    height: 100vh;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+#canvas2{
+    left: 0;
+    right: unset;
+}
+section {
+    position: relative;
+    border-bottom: 1px solid #4f1f1f;
+}
+section .box,.banner-content{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 100;
+}
+
+section#section2 .box{
+    left: unset;
+    right:0;
+}
+
+
+section .box  .box-content{
+    border: 1px solid #4f1f1f;
+    width: 450px;
+    height: 450px;
+    background: linear-gradient(45deg, rgb(94 34 34 / 75%), rgb(33 20 20 / 75%));
+    padding: 32px;
+    border-radius:30px 0 30px 0;
+    overflow: hidden;
+    box-shadow: 14px 6px 70px #4f1f1f, 0px 6px 70px #4f1f1f
+}
+
+section .box  .box-content h2{
+    padding-bottom: 16px;
+    border-bottom: 1px solid #796464;
+    color: #e3e3e3;
+    font-size:36px;
+    line-height: 48px;
+    font-family: "devil breeze";
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+}
+.banner-content h2{
+    font-size: 80px;
+    line-height:90px;
+    font-weight:700;
+    text-transform:uppercase;
+    font-family: "devil breeze";
+    font-weight: 700;
+    font-style: normal;
+    color: #771d1d;
+    opacity: 1;
+    position:relative;
+    text-shadow: 1px 1px 1px #919191, 1px 2px 1px #919191, 1px 3px 1px #919191, 1px 4px 1px #919191, 1px 5px 1px #919191, 1px 6px 1px #919191, 1px 7px 1px #919191, 1px 8px 1px #919191, 1px 9px 1px #919191, 1px 10px 1px #919191, 1px 18px 6px rgba(16, 16, 16, 0.4), 1px 22px 10px rgba(16, 16, 16, 0.2), 1px 25px 35px rgba(16, 16, 16, 0.2), 1px 30px 60px rgba(16, 16, 16, 0.4);
+    padding-left:140px;
+}
+
+  
+.banner-content  p{
+    font-size: 24px;
+    line-height: 36px;
+    padding-top: 24px;
+    color: #dfdfdf;
+    padding-left:140px;
+}
+
+/***Header***/
+header{
+   padding:12px 80px;
+   background-color:#f5e8d8;
+   position: fixed;
+   width:100%;
+   z-index:1000;
+}
+header img{
+    width:100px;
+}
+.header-content{
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+    width:100%;
+}
+.header-content ul{
+    display:flex;
+    gap: 20px;
+    align-items: center;
+    list-style-type: none;
+}
+.header-content li a,p{
+    font-size: 18px;
+    line-height:24px;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 600;
+}
+.header-content li a{
+    color: #211414;
+}
+p{
+    color: #ffffff;
+    font-size:24px;
+    line-height:28px;
+    font-weight: 600;
+    margin-top:20px;
+}
+footer{
+    padding:12px 80px;
+    background-color: #771d1d;
+    text-align:center;
+}
+footer p{
+    margin-top:0;
+    font-size:16px;
+    font-weight:400;
+}
+.banner-content h2 span{
+    display: inline-block;
+    overflow: hidden;
+    animation: .3s swift-up ease-in-out forwards;	
+  }
+  
+  .banner-content h2 i{
+    position: relative;
+
+    animation: .5s swift-up ease-in-out forwards;
+  }
+  
+  @keyframes swift-up {
+    to {
+      top: 0;
+    }
+  }
+
+
+@media(max-width:1440px){
+    .banner-content h2,.banner-content p{
+      padding-left:40px;
+    }
+    .banner-content h2{
+        font-size: 60px;
+        line-height:70px;
+    }
+}
