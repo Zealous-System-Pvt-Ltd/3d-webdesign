@@ -1,7 +1,18 @@
 {
+  "name": "web-3d",
+  "version": "1.0.0",
+  "homepage": "https://zealous-system-pvt-ltd.github.io/3d-webdesign",
+  "scripts": {
+  "build": "vite build",
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d dist"
+},
   "dependencies": {
     "gsap": "^3.12.7",
     "three": "^0.174.0",
     "vite": "^6.2.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^6.3.0"
   }
 }
