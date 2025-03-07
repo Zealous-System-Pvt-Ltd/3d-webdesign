@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bake Joy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <script type="module" crossorigin src="/assets/index-CSN8XylS.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-TjgZxCia.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-content">
+            <img src="/assets/3d-logo-DWSyby8f.png" alt="logo">
+            <ul class="nav-menu">
+            <li><a>About Us</a></li>
+            <li><a>services</a></li>
+            <li><a>Contact Us</a></li>
+            </ul>
+        </div>
+    </header>
+   
+   <section class="section1" id="section1">
+            <div class="banner-content">
+                <div>
+                    <h2 class="banner-title" data-before="WEBSITEDESIGN">Slice into Bliss.</h2>
+                    <p>Indulge in the soft, melt-in-your-mouth layers of our heavenly cakes. Baked with care and topped with the finest ingredients, each bite is a perfect balance of sweetness and delight.</p>
+               </div>
+            </div>
+        <div class="overlay"></div>
+        <div id="canvas1" class="canvas1">
+        </div>
+   </section>
+   <section class="section2" id="section2">
+        <div id="canvas2">
+        </div>
+        <div class="box">
+            <div class="box-content">
+                <h2>Round, Sweet, Irresistible.</h2>
+                <p>Our donuts are a perfect blend of soft, pillowy dough and a touch of sweetness. Whether glazed, frosted, or filled, each one promises a deliciously indulgent experience that will leave you coming back for more.</p>
+           </div>
+        </div>
+</section>
+<section class="section3" id="section3">
+    <div class="box">
+       <div class="box-content">
+            <h2>Tiny Bites, Big Joy.</h2>
+            <p>Our cupcakes pack a punch of flavor in every little bite. With a fluffy base and decadent frosting, these sweet treats are perfect for any occasion or simply when you need a moment of joy.</p>
+       </div>
+    </div>
+    <div id="canvas3">
+    </div>
+</section>
+<footer>
+   <p>© 2025 Zealous Systems. All Rights Reserved.</p>
+</footer>
+   
+
+    <script>
+        const swiftUpElements = document.querySelectorAll('.banner-content h2');
+
+            swiftUpElements.forEach(elem => {
+
+                const words = elem.textContent.split(' ');
+                elem.innerHTML = '';
+
+                words.forEach((el, index) => {
+                    words[index] = `<span><i>${words[index]}</i></span>`;
+                });
+
+                elem.innerHTML = words.join(' ');
+
+                const children = document.querySelectorAll('span > i');
+                children.forEach((node, index) => {
+                    node.style.animationDelay = `${index * .2}s`;
+                });
+
+            });
+    </script>
+    
+</body>
+</html>
