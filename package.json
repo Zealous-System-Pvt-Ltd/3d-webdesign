@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "homepage": "https://zealous-system-pvt-ltd.github.io/3d-webdesign",
   "scripts": {
-  "build": "vite build",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d dist"
-},
+    "dev": "npx vite",
+    "build": "vite build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
+  },
   "dependencies": {
     "gsap": "^3.12.7",
     "three": "^0.174.0",
